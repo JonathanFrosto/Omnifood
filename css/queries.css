@@ -58,6 +58,7 @@
     .contact-form{
         width: 100%;
     }
+    .contact-form .row div:first-child { display: none;}
     footer { font-size: 1.6rem;}
     footer .col { margin-bottom: 4%;}
     .footer-nav,
@@ -70,7 +71,9 @@
 
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 480px){
-
+    .btn-store img { height:40px;}
+    .plan-box li { padding: 0;}
+    .small-icon { width: 30px;}
 }
 
  /* size > 1023px = lg size */
