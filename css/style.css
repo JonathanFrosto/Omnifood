@@ -93,7 +93,7 @@ a:visited{
 
 a:hover,
 a:active{
-    transition: border 0.8s;
+    transition: border 0.7s;
     border-bottom: 1px solid transparent;
 }
 
@@ -161,17 +161,26 @@ header{
     background-size: cover;
     background-position: center;
     position: relative;
-    
 }
 
+.menu-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+/* main-nav */
 nav {
     padding: 10px 0;
     text-transform: uppercase;
 }
 
-nav img{
+.logo{
     height: 100px;
-    float: left;
+}
+
+.logo-black {
+    display: none;
 }
 
 .nav-bar{
@@ -184,7 +193,6 @@ nav img{
 .nav-bar li{
     display: inline-block;
     margin-left: 40px;
-    
 }
 
 .nav-bar a:link,
@@ -200,7 +208,40 @@ nav img{
     border-bottom: 2px solid #e67e22;
 }
 
+/* sticky-nav */
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    z-index: 1;
+    box-shadow: 0 2px 2px rgb(238, 238, 238);
+}
 
+.sticky .nav-bar a:link,
+.sticky .nav-bar a:visited {
+    color: #555;
+    padding-bottom: 22px;
+}
+
+.logo,
+.logo-black {
+    float: left;
+}
+
+.logo-black {
+    height: 50px;
+}
+
+.sticky .nav-bar{
+    margin-top: 12px;
+}
+
+.sticky .logo { display: none; }
+.sticky .logo-black { display: block; }
+
+/* ------ */
 .header-text-box{
     position: absolute;
     top: 50%;
@@ -210,7 +251,7 @@ nav img{
 
 /* SECTION FEATURES */
 
-.features{
+.section-features{
     text-align: center;
     font-size: 18px;
 }

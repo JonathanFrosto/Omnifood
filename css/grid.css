@@ -31,7 +31,7 @@
 	
 }
 
-.col:nth-child(odd) { margin-left: 0; } /* all browsers except IE6 and lower */
+.col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
 
 
 /*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
