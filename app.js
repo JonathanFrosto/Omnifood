@@ -53,9 +53,27 @@ $('.wp-4').waypoint(function(direction){
 $('#mobile-menu').click(function(){
     var largura = $(window).width();
     var logo = $('.logo')
+    var mobileMenu = $('#mobile-menu i');
+
+    if ( mobileMenu.hasClass('fa-bars') ){
+        mobileMenu.removeClass('fa-bars');
+        mobileMenu.addClass('fa-times');
+    }
+    else{
+        mobileMenu.addClass('fa-bars');
+        mobileMenu.removeClass('fa-times');
+    }
 
     if ( largura <= 360){
-        logo.slideToggle(200);
+
+        if ( logo.css('display') == 'block' ) {
+            logo.css('display','none');
+        }
+        else {
+            setTimeout(function(){
+                logo.css('display','block');
+            },200)
+        }
     }
 
     $('#nav-bar').slideToggle(200);

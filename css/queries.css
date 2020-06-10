@@ -66,6 +66,7 @@
         left: 0;
         width:100%;       
         text-align: center;
+        transform: translateX(0);
     }
 
     .nav-bar { top: 7px; }

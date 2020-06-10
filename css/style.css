@@ -179,6 +179,7 @@ nav {
 
 .logo{
     height: 100px;
+    display: block;
 }
 
 .logo-black {
