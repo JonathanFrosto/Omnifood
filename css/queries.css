@@ -27,7 +27,7 @@
 
 
 /* Small phones to small tablets: from 480px to 767px */
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 768px){
     section { padding: 40px 0;}
     body { font-size: 16px ;}
     h1 { font-size: 3.3rem;}
@@ -46,7 +46,56 @@
 
     }
 
+    /* navegation-bar */
+    .mobile-menu { display: block; }
+
     .nav-bar { display: none;}
+
+    .nav-bar {
+        float: none;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: auto;       
+        text-align: center;
+    }
+
+    .sticky .nav-bar {
+        float: none;
+        position: absolute;
+        left: 0;
+        width:100%;       
+        text-align: center;
+    }
+
+    .nav-bar { top: 7px; }
+    .sticky .nav-bar {
+        top: 59px;
+        background-color: rgba(255, 255, 255, 0.98);
+    }
+
+    .nav-bar li{
+        display: block;
+        margin: 0;
+    }
+
+    .sticky .nav-bar li {
+        padding: 8px 0;
+        border-bottom: 1px solid rgb(238, 238, 238);
+        
+    }
+
+    .nav-bar a:link,
+    .nav-bar a:visited,
+    .sticky .nav-bar a:link,
+    .sticky .nav-bar a:visited {
+        padding-bottom: 2px;
+    }
+
+
+    
+    /* ----------- */
+
     .long-copy { width: 100%;}
     .iphone-box img { width: 200px;}
     .steps-box { margin-bottom: 0;}
@@ -76,7 +125,28 @@
     .plan-box li { padding: 0;}
     .small-icon { width: 30px;}
 
+    
     h2 { font-size: 2.5rem;}
+    .header-text-box { top: 60%; }
+    .nav-bar { transform: translateX(-25%); }
+    .sticky .nav-bar li { padding-left: 0;}
+}
+
+@media only screen and (max-width: 360px){
+    h1 { font-size: 3rem;}
+    h2 { font-size: 2.3rem; }
+    
+    .nav-bar { transform: translateX(0); }
+    .nav-bar {
+        float: left;
+        position: static;
+        width: auto;
+        text-align: left;
+    }
+
+    .nav-bar li {
+        padding-left: 0;
+    }
 }
 
  /* size > 1023px = lg size */

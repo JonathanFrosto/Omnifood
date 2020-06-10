@@ -48,3 +48,16 @@ $('.wp-4').waypoint(function(direction){
 },{
     offset: '60%'
 });
+
+/* mobile-menu */
+$('#mobile-menu').click(function(){
+    var largura = $(window).width();
+    var logo = $('.logo')
+
+    if ( largura <= 360){
+        logo.slideToggle(200);
+    }
+
+    $('#nav-bar').slideToggle(200);
+});
+
